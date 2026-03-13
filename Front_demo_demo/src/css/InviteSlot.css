@@ -1,0 +1,117 @@
+/* =============================
+   🔹 Invite Slot Modal Card
+   ============================= */
+
+.inviteCard {
+  width: 420px;
+  height: 42%;
+  padding: 20px;
+  margin: auto;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  position: relative;
+  animation: popup 0.25s ease-out;
+}
+
+@keyframes popup {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* 친구 없을 때 메시지 */
+#no_friends {
+  font-size: 16px;
+  padding: 20px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =============================
+   🔹 친구 리스트 카드
+   ============================= */
+
+.inviteCard .card {
+  width: 90%;
+  height: 35px;
+  padding: 12px 14px;
+
+  margin-bottom: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+
+  transition: 0.2s;
+}
+
+.inviteCard .card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+/* 친구 닉네임 */
+.inviteCard .invite-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e8f3fc;
+  text-shadow: 0 0 6px rgba(255,255,255,0.15);
+}
+
+/* =============================
+   🔹 버튼 공통
+   ============================= */
+
+.inviteCard button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.inviteCard button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* 초대 버튼 (강조색) */
+#invite {
+  background: rgba(0, 148, 255, 0.35);
+}
+
+#invite:hover {
+  background: rgba(0, 162, 255, 0.55);
+}
+
+/* 취소 버튼 */
+.cancel_btn {
+  margin-top: 16px;
+  width: 60%;
+  padding: 10px 0;
+
+  background: rgba(255, 80, 80, 0.35);
+}
+
+.cancel_btn:hover {
+  background: rgba(255, 100, 100, 0.55);
+}

@@ -1,0 +1,171 @@
+.KeySetting-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.KeySetting-content .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d6f1ff;
+}
+
+.KeySetting-content .back_btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.KeySetting-content .back_btn:hover {
+    opacity: 1;
+}
+
+.KeySetting-content .key_list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+    max-height: 450px;
+    /* 🔥 강제 스크롤 적용 */
+}
+
+/* 스크롤바 커스텀 */
+.KeySetting-content .key_list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.KeySetting-content .key_list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.KeySetting-content .key_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.KeySetting-content .key_item .label {
+    color: #e4f4ff;
+    font-size: 14px;
+}
+
+.KeySetting-content .key_btn {
+    min-width: 100px;
+    padding: 10px 18px;
+    background: #2c3e5a;
+    border: none;
+    border-bottom: 3px solid #1a2a40;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.KeySetting-content .key_btn:hover {
+    background: #364d6e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border-bottom: 4px solid #1a2a40;
+}
+
+.KeySetting-content .key_btn:active {
+    background: #243447;
+    transform: translateY(2px);
+    border-bottom: 0px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.KeySetting-content .key_btn.listening {
+    background: #d4af37;
+    border-bottom: 3px solid #b8860b;
+    color: #000000;
+    animation: pulse_glow 1.5s infinite;
+}
+
+@keyframes pulse_glow {
+    0% {
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+    }
+}
+
+@keyframes blink_and_glow {
+    from {
+        opacity: 0.7;
+        box-shadow: 0 0 10px rgba(255, 230, 0, 0.2);
+    }
+
+    to {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 230, 0, 0.5);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.KeySetting-content .footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 10px;
+}
+
+.KeySetting-content .footer button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.KeySetting-content .save_btn {
+    background: rgba(80, 180, 255, 0.2);
+    border: 1px solid rgba(80, 180, 255, 0.5);
+    color: #d6f1ff;
+}
+
+.KeySetting-content .save_btn:hover {
+    background: rgba(80, 180, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.KeySetting-content .reset_btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.KeySetting-content .reset_btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

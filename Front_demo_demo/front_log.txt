@@ -1,0 +1,347 @@
+
+> demo@0.0.0 dev
+> vite --port 5173 --host --host 0.0.0.0
+
+
+  [32m[1mVITE[22m v7.2.7[39m  [2mready in [0m[1m264[22m[2m[0m ms[22m
+
+  [32m??[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m??[39m  [1mNetwork[22m: [36mhttp://192.168.219.102:[1m5173[22m/[39m
+  [32m??[39m  [1mNetwork[22m: [36mhttp://10.219.125.206:[1m5173[22m/[39m
+  [32m??[39m  [1mNetwork[22m: [36mhttp://172.23.80.1:[1m5173[22m/[39m
+[2m[32m  ??[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m?ㅽ썑 11:12:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅽ썑 11:19:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+?ㅽ썑 11:19:27 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/MainScene.js:170:4
+  176 |      updateAimKey() {
+  177 |          if (this.aimKeyObj) {
+  178 |              this.aimKeyObj.destroy();
+      |        ^
+  179 |              this.aimKeyObj = null;
+  180 |          }
+?ㅽ썑 11:19:27 [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/MainScene.js:170:4
+  176 |      updateAimKey() {
+  177 |          if (this.aimKeyObj) {
+  178 |              this.aimKeyObj.destroy();
+      |        ^
+  179 |              this.aimKeyObj = null;
+  180 |          }
+      at TransformPluginContext._formatLog (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at TransformPluginContext.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:27081:10)
+      at async EnvironmentPluginContainer.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:24541:20)
+?ㅽ썑 11:19:27 [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/MainScene.js:170:4
+  176 |      updateAimKey() {
+  177 |          if (this.aimKeyObj) {
+  178 |              this.aimKeyObj.destroy();
+      |        ^
+  179 |              this.aimKeyObj = null;
+  180 |          }
+      at TransformPluginContext._formatLog (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at TransformPluginContext.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:27081:10)
+      at async EnvironmentPluginContainer.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:24541:20)
+[2m?ㅽ썑 11:19:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅽ썑 11:25:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+?ㅽ썑 11:25:45 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅽ썑 11:26:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅽ썑 11:26:32 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅽ썑 11:27:05 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅽ썑 11:27:05 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅽ썑 11:34:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+?ㅽ썑 11:35:59 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅽ썑 11:35:59 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅽ썑 11:42:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅽ썑 11:55:24 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅽ썑 11:55:24 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅼ쟾 12:26:13[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 12:28:13 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 12:28:13 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 12:28:16 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅼ쟾 12:32:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:32:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 12:33:27 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 12:33:27 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 12:33:33 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅼ쟾 12:38:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:38:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:47:02[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/StatSelection.jsx[22m
+[2m?ㅼ쟾 12:47:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:47:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:47:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:54:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:54:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/StatSelection.jsx[22m
+[2m?ㅼ쟾 12:54:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 12:54:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:04:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:04:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:09:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:09:19[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:09:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:21:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:22:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:39:12[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:41:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:41:29[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:45:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:45:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/StatSelection.jsx[22m
+[2m?ㅼ쟾 1:45:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:46:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:50:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:50:14[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:54:32[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:54:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:59:22[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:59:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 1:59:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:00:11[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 2:00:11 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/UIScene.js:180:4
+  186 |          const height = gameSize.height;
+  187 |  
+  188 |          this.expBarBg.setPosition(50, height - 30);
+      |                                       ^
+  189 |          this.expBarBg.width = width - 100;
+  190 |  
+?ㅼ쟾 2:00:11 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/UIScene.js:180:4
+  186 |          const height = gameSize.height;
+  187 |  
+  188 |          this.expBarBg.setPosition(50, height - 30);
+      |                                       ^
+  189 |          this.expBarBg.width = width - 100;
+  190 |  
+?ㅼ쟾 2:00:11 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/UIScene.js:180:4
+  186 |          const height = gameSize.height;
+  187 |  
+  188 |          this.expBarBg.setPosition(50, height - 30);
+      |                                       ^
+  189 |          this.expBarBg.width = width - 100;
+  190 |  
+?ㅼ쟾 2:00:11 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/UIScene.js:180:4
+  186 |          const height = gameSize.height;
+  187 |  
+  188 |          this.expBarBg.setPosition(50, height - 30);
+      |                                       ^
+  189 |          this.expBarBg.width = width - 100;
+  190 |  
+?ㅼ쟾 2:00:11 [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/scenes/UIScene.js:180:4
+  186 |          const height = gameSize.height;
+  187 |  
+  188 |          this.expBarBg.setPosition(50, height - 30);
+      |                                       ^
+  189 |          this.expBarBg.width = width - 100;
+  190 |  
+      at TransformPluginContext._formatLog (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at TransformPluginContext.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:27081:10)
+      at async EnvironmentPluginContainer.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:24541:20)
+[2m?ㅼ쟾 2:00:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:03:59[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:13:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:13:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 2:13:40 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/monsters.js:183:0
+?ㅼ쟾 2:13:40 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/monsters.js:183:0
+?ㅼ쟾 2:13:40 [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/monsters.js:183:0
+      at TransformPluginContext._formatLog (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at TransformPluginContext.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:27081:10)
+      at async EnvironmentPluginContainer.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:24541:20)
+[2m?ㅼ쟾 2:13:50[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:25:41[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:31:06[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:31:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:31:34[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:40:00[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:44:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:45:19[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:49:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:51:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:53:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:53:54[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 2:58:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:02:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 3:02:33 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/vision.js:251:0
+?ㅼ쟾 3:02:33 [vite] (client) Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/vision.js:251:0
+?ㅼ쟾 3:02:33 [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/src/game/systems/vision.js:251:0
+      at TransformPluginContext._formatLog (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at TransformPluginContext.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:27081:10)
+      at async EnvironmentPluginContainer.transform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///D:/WorkSpace/ROGUE-RELOAD-in-hex/Front_demo_demo/node_modules/vite/dist/node/chunks/config.js:24541:20)
+[2m?ㅼ쟾 3:03:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:09:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:19:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 3:19:43 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:43 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:43 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:43 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:44 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:45 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:45 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:45 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:45 [vite] http proxy error: /api/lobby/me
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:45 [vite] http proxy error: /api/auth/verify
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:19:59 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅼ쟾 3:35:05[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:35:07[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:35:21[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:35:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:35:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+?ㅼ쟾 3:36:29 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:36:38 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+?ㅼ쟾 3:36:44 [vite] http proxy error: /api/signin
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+[2m?ㅼ쟾 3:42:20[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:42:25[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:45:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:45:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/GameMain.jsx, /src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:50:33[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+[2m?ㅼ쟾 3:50:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Tutorial.jsx[22m
+^C

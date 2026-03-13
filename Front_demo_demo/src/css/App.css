@@ -1,0 +1,301 @@
+/* 전체 앱 */
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  font-family: "Pretendard", sans-serif;
+}
+
+/* 헤더 영역 */
+.app .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #222;
+}
+
+/* 게임 시작 버튼 */
+.app .header #game_start {
+  padding: 10px 20px;
+  background: #3d7fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.app .header #game_start:hover {
+  background: #5b94ff;
+}
+
+/* 오른쪽 버튼들 */
+.app .header .right_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.app .header .right_buttons button {
+  padding: 8px 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.app .header .right_buttons button:hover {
+  background: #444;
+}
+
+
+/* 메인 영역 */
+.app .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/* 로고 */
+.app .header .logo {
+  width: 300px;
+  height: 59px;
+  /* 고정 높이 제거 */
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .header .logo img {
+  margin-top: 100px;
+  width: 100%;
+  height: 250px;
+  /* 비율 유지 */
+  object-fit: contain;
+}
+
+
+
+/* 폼 영역 */
+.app .main .form {
+  width: 100%;
+  max-width: 1420px;
+  height: 80%;
+  padding: 20px;
+}
+
+/* 블러 오버레이 */
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+/* 우측 상단 팝업 (기존) */
+.popup-panel {
+  position: absolute;
+  top: 80px;
+  /* header 아래 */
+  right: 40px;
+  /* 약간 여백 */
+  z-index: 20;
+
+  width: 392px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+
+  animation: fadeSlide 0.25s ease-out;
+}
+
+/* 중앙 정렬 팝업 (인게임용) */
+.centered-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+
+  width: 392px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+
+  animation: fadeCenter 0.25s ease-out;
+}
+
+@keyframes fadeCenter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -52%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 애니메이션 */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   SweetAlert2 Custom Glass Theme
+   (App / Lobby 스타일과 100% 일치)
+   ================================ */
+
+.swal2-popup {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(18px) !important;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35) !important;
+  padding: 24px 26px !important;
+  color: #e9f4ff !important;
+
+  /* 커스텀 등장 애니메이션 유지 */
+  animation: fadeSlide 0.25s ease-out !important;
+}
+
+.swal2-title {
+  color: #e9f4ff !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  margin-bottom: 18px !important;
+}
+
+.swal2-html-container {
+  color: #d9e9ff !important;
+  font-size: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+/* 공통 버튼 */
+.swal2-confirm,
+.swal2-cancel {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(8px);
+
+  transition: 0.2s ease !important;
+}
+
+/* 수락 버튼 (파란 계열) */
+.swal2-confirm {
+  background: rgba(61, 127, 255, 0.35) !important;
+  border-color: rgba(80, 150, 255, 0.45) !important;
+  color: #fff !important;
+}
+
+.swal2-confirm:hover {
+  background: rgba(61, 127, 255, 0.55) !important;
+}
+
+/* 거절 버튼 */
+.swal2-cancel {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #fff !important;
+}
+
+.swal2-cancel:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+}
+
+/* 아이콘 */
+.swal2-icon {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-radius: 14px !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+/* === SweetAlert 기본 애니메이션 제거 (잔상 문제 해결 핵심) === */
+.swal2-show,
+.swal2-hide {
+  animation: none !important;
+}
+
+/* === 팝업 닫힐 때 blur 제거 (잔상 문제 해결 핵심2) === */
+.swal2-hide .swal2-popup {
+  backdrop-filter: none !important;
+  opacity: 0 !important;
+}
+
+/* 커스텀 등장 애니메이션 */
+
+/* Center Message Overlay */
+.center-message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+  /* 클릭 통과 예외 */
+  pointer-events: auto;
+}
+
+.center-message-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 2px 2px 4px black;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

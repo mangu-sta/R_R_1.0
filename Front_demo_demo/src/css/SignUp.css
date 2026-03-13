@@ -1,0 +1,240 @@
+/* ===========================================================
+   회원가입 필드셋 — 글라스모피즘 테마
+   =========================================================== */
+.SignUp {
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px 36px;
+  box-sizing: border-box;
+
+  background: rgba(40, 20, 60, 0.4);
+  border-radius: 24px;
+  border: 1px solid rgba(200, 100, 255, 0.2);
+  backdrop-filter: blur(16px);
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(180, 80, 255, 0.1);
+
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SignUp legend {
+  display: none;
+  /* 헤더 섹션으로 대체 */
+}
+
+/* 헤더 섹션 */
+.SignUp .header_section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.SignUp .header_icon {
+  color: #d18aff;
+  filter: drop-shadow(0 0 8px rgba(209, 138, 255, 0.6));
+}
+
+.SignUp .header_text h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #f3e5ff;
+  letter-spacing: -0.5px;
+}
+
+.SignUp .header_text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #c9a9ff;
+  opacity: 0.8;
+}
+
+
+/* ===========================================================
+    input 스타일
+   =========================================================== */
+.SignUp #nickname {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(209, 138, 255, 0.15);
+  border-radius: 12px;
+
+  color: #f3e5ff;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  backdrop-filter: blur(3px);
+  transition: all 0.25s ease;
+}
+
+.SignUp #nickname::placeholder {
+  color: rgba(200, 180, 255, 0.4);
+}
+
+.SignUp #nickname:focus {
+  border-color: rgba(209, 138, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(209, 138, 255, 0.2);
+  outline: none;
+}
+
+/* ===========================================================
+   비밀번호 영역
+   =========================================================== */
+.SignUp #password {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(209, 138, 255, 0.15);
+  border-radius: 12px;
+
+  color: #f3e5ff;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  backdrop-filter: blur(3px);
+  transition: all 0.25s ease;
+}
+
+.SignUp #password::placeholder {
+  color: rgba(200, 180, 255, 0.4);
+}
+
+.SignUp #password:focus {
+  border-color: rgba(209, 138, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(209, 138, 255, 0.2);
+  outline: none;
+}
+
+/* 컨테이너 */
+.SignUp .password_input_container {
+  position: relative;
+  width: 100%;
+}
+
+/* 비밀번호 input */
+.SignUp .password_input_container .password {
+  padding-right: 52px;
+}
+
+/* 토글 버튼 */
+.SignUp .password_input_container .toggle_btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-80%);
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(209, 138, 255, 0.2);
+  border-radius: 50%;
+
+  color: #e5ccff;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.SignUp .password_input_container .toggle_btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(209, 138, 255, 0.4);
+  transform: translateY(-80%) scale(1.1);
+}
+
+/* ===========================================================
+   버튼 영역
+   =========================================================== */
+.SignUp .buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 로그인 링크 */
+.SignUp #login_link {
+  text-decoration: none;
+  color: #d18aff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 150ms ease;
+}
+
+.SignUp #login_link:hover {
+  color: #e5ccff;
+  text-shadow: 0 0 8px rgba(209, 138, 255, 0.6);
+}
+
+/* 회원가입 버튼 */
+.SignUp #signup_btn {
+  padding: 12px 24px;
+
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(255, 105, 180, 0.3));
+  border: 1px solid rgba(209, 138, 255, 0.5);
+  border-radius: 12px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2);
+
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.SignUp #signup_btn:hover {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.5), rgba(255, 105, 180, 0.5));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(138, 43, 226, 0.4);
+}
+
+.SignUp #signup_btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+/* 비밀번호 상태 메시지 */
+.SignUp .password_status {
+  margin-top: -8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 4px;
+}
+
+.SignUp .password_status.invalid {
+  color: #ff8e8e;
+}
+
+.SignUp .password_status.valid {
+  color: #b2ff8e;
+  text-shadow: 0 0 10px rgba(178, 255, 142, 0.4);
+}

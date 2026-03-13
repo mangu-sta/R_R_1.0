@@ -1,0 +1,218 @@
+/* ===========================================================
+   로그인 필드셋 — 글라스모피즘 테마
+   =========================================================== */
+.SignIn {
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px 36px;
+  box-sizing: border-box;
+
+  background: rgba(20, 35, 60, 0.4);
+  border-radius: 24px;
+  border: 1px solid rgba(80, 180, 255, 0.2);
+  backdrop-filter: blur(16px);
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(80, 180, 255, 0.1);
+
+  animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SignIn legend {
+  display: none;
+  /* 헤더 섹션으로 대체 */
+}
+
+/* 헤더 섹션 */
+.SignIn .header_section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.SignIn .header_icon {
+  color: #80b4ff;
+  filter: drop-shadow(0 0 8px rgba(128, 180, 255, 0.6));
+}
+
+.SignIn .header_text h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #e6f3ff;
+  letter-spacing: -0.5px;
+}
+
+.SignIn .header_text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #a3c9ff;
+  opacity: 0.8;
+}
+
+
+/* ===========================================================
+    닉네임 input 스타일
+   =========================================================== */
+.SignIn #nickname {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(128, 180, 255, 0.15);
+  border-radius: 12px;
+
+  color: #e6f3ff;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  backdrop-filter: blur(3px);
+  transition: all 0.25s ease;
+}
+
+.SignIn #nickname::placeholder {
+  color: rgba(160, 200, 255, 0.4);
+}
+
+.SignIn #nickname:focus {
+  border-color: rgba(128, 180, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(128, 180, 255, 0.2);
+  outline: none;
+}
+
+
+/* ===========================================================
+   비밀번호 영역
+   =========================================================== */
+.SignIn .password_input_container {
+  position: relative;
+  width: 100%;
+}
+
+.SignIn #password {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(128, 180, 255, 0.15);
+  border-radius: 12px;
+
+  color: #e6f3ff;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  backdrop-filter: blur(3px);
+  transition: all 0.25s ease;
+}
+
+.SignIn #password::placeholder {
+  color: rgba(160, 200, 255, 0.4);
+}
+
+.SignIn #password:focus {
+  border-color: rgba(128, 180, 255, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(128, 180, 255, 0.2);
+  outline: none;
+}
+
+/* 토글 버튼 */
+.SignIn .password_input_container .toggle_btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-80%);
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(128, 180, 255, 0.2);
+  border-radius: 50%;
+
+  color: #c9e1ff;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.SignIn .password_input_container .toggle_btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(128, 180, 255, 0.4);
+  transform: translateY(-80%) scale(1.1);
+}
+
+
+/* ===========================================================
+   버튼 영역
+   =========================================================== */
+.SignIn .buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 회원가입 링크 */
+.SignIn #regist_link {
+  text-decoration: none;
+  color: #80b4ff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 150ms ease;
+}
+
+.SignIn #regist_link:hover {
+  color: #c9e1ff;
+  text-shadow: 0 0 8px rgba(128, 180, 255, 0.6);
+}
+
+/* 로그인 버튼 */
+.SignIn #signin_btn {
+  padding: 12px 24px;
+
+  background: linear-gradient(135deg, rgba(80, 180, 255, 0.3), rgba(0, 229, 255, 0.3));
+  border: 1px solid rgba(80, 180, 255, 0.5);
+  border-radius: 12px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(80, 180, 255, 0.2);
+
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.SignIn #signin_btn:hover {
+  background: linear-gradient(135deg, rgba(80, 180, 255, 0.5), rgba(0, 229, 255, 0.5));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(80, 180, 255, 0.4);
+}
+
+.SignIn #signin_btn:active {
+  transform: translateY(0) scale(0.95);
+}

@@ -1,0 +1,90 @@
+.gamestart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    backdrop-filter: blur(4px);
+}
+
+.gamestart-box {
+    background: #2a2a2a;
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.gamestart-title {
+    color: #00ffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gamestart-desc {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.gamestart-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gamestart-buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.confirm-btn {
+    background: #00ffff;
+    color: #000;
+}
+
+.confirm-btn:hover {
+    background: #00cccc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+}
+
+.cancel-btn {
+    background: #ff4444;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+}

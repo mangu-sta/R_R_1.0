@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>캐릭터 관리 테스트</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f5f5f5;
+    }
+    .box {
+      width: 350px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+
+    .char-item {
+      padding: 10px;
+      background: #fff;
+      margin-bottom: 8px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .delete-btn {
+      background: #d9534f;
+      padding: 6px 10px;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    .delete-btn:hover {
+      background: #c9302c;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🧪 캐릭터 생성 / 조회 / 삭제 테스트 페이지</h2>
+
+<!-- 캐릭터 생성 -->
+<div class="box">
+  <h3>캐릭터 생성</h3>
+
+  <label>유저 ID (userId)</label>
+  <input id="userId" type="number" placeholder="예: 1">
+
+  <label>직업 (job)</label>
+  <select id="job">
+    <option value="FIREFIGHTER">FIREFIGHTER</option>
+    <option value="SOLDIER">SOLDIER</option>
+    <option value="DOCTOR">DOCTOR</option>
+    <option value="REPORTER">REPORTER</option>
+  </select>
+
+  <label>맵 ID (mapId)</label>
+  <input id="mapId" type="number" placeholder="예: 1">
+
+  <button onclick="createCharacter()">캐릭터 생성</button>
+
+  <div id="create-result"></div>
+</div>
+
+<!-- 캐릭터 목록(단일) -->
+<div class="box">
+  <h3>내 캐릭터</h3>
+  <div id="character-box"></div>
+
+  <button onclick="loadCharacter()">🔄 새로고침</button>
+</div>
+
+<script>
+
+  // -------------------------------------------
+  // 캐릭터 생성
+  // -------------------------------------------
+  function createCharacter() {
+    const userId = document.getElementById("userId").value;
+    const job = document.getElementById("job").value;
+    const mapId = document.getElementById("mapId").value;
+
+    fetch("/api/character/create", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId: Number(userId),
+        job: job,
+        mapId: Number(mapId)
+      })
+    })
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById("create-result").innerHTML =
+                      `<strong>응답 결과:</strong> ${data}`;
+
+              loadCharacter();   // 생성 후 목록 갱신
+            });
+  }
+
+  // -------------------------------------------
+  // 단일 캐릭터 불러오기
+  // -------------------------------------------
+  function loadCharacter() {
+    fetch("/api/character/my")
+            .then(res => res.json())
+            .then(char => {
+
+              const box = document.getElementById("character-box");
+              box.innerHTML = "";
+
+              if (!char || !char.id) {
+                box.innerHTML = "<p>캐릭터 없음</p>";
+                return;
+              }
+
+              const item = document.createElement("div");
+              item.className = "char-item";
+
+              item.innerHTML = `
+          <div>
+            <strong>ID:</strong> ${char.id}<br>
+            <strong>직업:</strong> ${char.job}<br>
+            <strong>맵:</strong> ${char.mapId}
+          </div>
+          <button class="delete-btn" onclick="deleteCharacter(${char.id})">
+            삭제
+          </button>
+        `;
+
+              box.appendChild(item);
+            });
+  }
+
+  // -------------------------------------------
+  // 캐릭터 삭제
+  // -------------------------------------------
+  function deleteCharacter(id) {
+    fetch("/api/character/" + id, { method: "DELETE" })
+            .then(res => res.text())
+            .then(msg => {
+              alert(msg);
+              loadCharacter();
+            });
+  }
+
+  // 페이지 로딩 시 자동 실행
+  loadCharacter();
+
+</script>
+
+</body>
+</html>

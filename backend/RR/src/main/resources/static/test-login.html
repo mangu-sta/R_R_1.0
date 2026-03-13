@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>JWT / Redis 토큰 테스트</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+<h1>🔥 JWT + Redis Access/Refresh Token 테스트 페이지</h1>
+
+<!-- 회원가입 -->
+<h2>회원가입</h2>
+<input id="signupNick" placeholder="닉네임"><br>
+<input id="signupPw" placeholder="비밀번호" type="password"><br>
+<button onclick="signup()">회원가입</button>
+
+<hr>
+
+<!-- 로그인 -->
+<h2>로그인</h2>
+<input id="signinNick" placeholder="닉네임"><br>
+<input id="signinPw" placeholder="비밀번호" type="password"><br>
+<button onclick="signin()">로그인</button>
+
+<hr>
+
+<!-- 인증 -->
+<h2>인증 테스트</h2>
+<button onclick="checkMe()">/api/me 요청</button>
+<button onclick="refresh()">/api/auth/refresh 요청</button>
+
+<hr>
+
+<!-- 토큰 보기 -->
+<h2>서버 쿠키 기반 Access/Refresh Token 확인</h2>
+<button onclick="showTokens()">/api/token 전체 보기</button>
+
+<hr>
+
+<!-- 브라우저 쿠키 확인 -->
+<h2>브라우저 쿠키 보기</h2>
+<button onclick="showCookies()">document.cookie 출력</button>
+
+<hr>
+
+<!-- 자동 만료 테스트 -->
+<h2>Access 자동 만료 테스트</h2>
+<label>대기 시간 (초): </label>
+<input id="waitSec" value="12" style="width:60px;">
+<button onclick="autoExpireTest()">테스트 시작</button>
+
+<hr>
+
+<h3>결과</h3>
+<pre id="result" style="background:#f5f5f5; padding:10px; border-radius:5px;"></pre>
+
+<script>
+
+    function show(text) {
+        document.getElementById("result").textContent = text;
+    }
+
+    function signup() {
+        fetch("/api/signup", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                nickname: document.getElementById("signupNick").value,
+                password: document.getElementById("signupPw").value
+            })
+        })
+            .then(r => r.text())
+            .then(show)
+            .catch(e => show("에러: " + e));
+    }
+
+    function signin() {
+        fetch("/api/signin", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include",
+            body: JSON.stringify({
+                nickname: document.getElementById("signinNick").value,
+                password: document.getElementById("signinPw").value
+            })
+        })
+            .then(r => r.text())
+            .then(show)
+            .catch(e => show("에러: " + e));
+    }
+
+    function checkMe() {
+        fetch("/api/me", {
+            method: "GET",
+            credentials: "include"
+        })
+            .then(async r => {
+                let text = await r.text();
+                show("응답코드: " + r.status + "\n\n" + text);
+            })
+            .catch(e => show("에러: " + e));
+    }
+
+    function refresh() {
+        fetch("/api/auth/refresh", {
+            method: "POST",
+            credentials: "include"
+        })
+            .then(async r => {
+                let text = await r.text();
+                show("응답코드: " + r.status + "\n\n" + text);
+            })
+            .catch(e => show("에러: " + e));
+    }
+
+    /* ⭐ NEW : /api/token 전체 보기 */
+    function showTokens() {
+        fetch("/api/token", {
+            method: "GET",
+            credentials: "include"
+        })
+            .then(async r => {
+                let text = await r.text();
+                show("응답코드: " + r.status + "\n\n" + text);
+            })
+            .catch(e => show("에러: " + e));
+    }
+
+    function showCookies() {
+        let cookies = document.cookie;
+        show("브라우저 저장 쿠키:\n" + cookies);
+    }
+
+    function autoExpireTest() {
+        let sec = parseInt(document.getElementById("waitSec").value);
+        show(`${sec}초 후 Access 토큰 만료 테스트 시작…`);
+
+        setTimeout(() => {
+            show("Access 만료 이후 /api/me 호출…");
+            checkMe();
+        }, sec * 1000);
+    }
+
+</script>
+
+</body>
+</html>
