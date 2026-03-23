@@ -17,7 +17,7 @@
 ## 프로젝트 정보
 
 - **프로젝트명**: ROGUE & RELOAD
-- **프로젝트 유형**: 개인 프로젝트
+- **프로젝트 유형**: 팀 프로젝트 (Frontend / Backend 협업)
 - **배포 여부**: 미배포
 - **한 줄 설명**: 실시간 멀티플레이 전투 기반 웹 게임
 - **프로젝트 구조**: 프론트엔드(React + Phaser)와 백엔드(Spring Boot)가 분리된 실시간 멀티플레이 게임 구조
@@ -29,6 +29,7 @@
 ## 목차
 
 - [프로젝트 소개](#project-overview)
+- [협업 방식](#collaboration)
 - [주요 기능](#main-features)
 - [시스템 아키텍처](#system-architecture)
 - [기술 스택](#tech-stack)
@@ -47,7 +48,17 @@
 프로젝트는 로그인, 캐릭터 생성, 로비, 친구/알림, 실시간 전투, 스테이지 진행, 저장 및 랭킹 흐름으로 구성되어 있습니다.
 
 프론트엔드는 **React + Phaser** 기반으로 구성되어 있으며, 백엔드는 **Spring Boot** 기반으로 분리하여 구현했습니다.  
+본 프로젝트는 Frontend와 Backend를 분리하여 2인 팀으로 협업하여 개발했습니다.
 실시간 통신은 **WebSocket(STOMP)** 와 **SSE**를 사용하고, 상태 관리와 동기화를 위해 **Redis**를 활용했습니다.
+
+---
+
+<a id="collaboration"></a>
+## 🤝 협업 방식
+
+- Frontend / Backend 역할 분리 개발
+- REST API 및 WebSocket 인터페이스 설계 후 연동
+- 실시간 게임 동기화를 위한 데이터 구조 협의
 
 ---
 
@@ -349,7 +360,9 @@ Backend App      : backend/RR/src/main/java/com/release/rr/RrApplication.java
 ---
 
 <a id="developer"></a>
-## 개발자
+## 👨‍💻 개발자
 
-- **망구**
-- **역할**: Full Stack / 개인 프로젝트
+| 이름 | 역할 | 담당 영역 |
+|---|---|---|
+| 최명기 | Backend | API, WebSocket, 게임 로직, Redis |
+| 정광성 | Frontend | UI, Phaser 게임 구현, 상태 관리 | 
