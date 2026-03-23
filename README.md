@@ -1,4 +1,4 @@
-# 🎮 ROG & REROAD
+# 🎮 ROGUE & RELOAD
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 
 ## 프로젝트 정보
 
-- **프로젝트명**: ROG & REROAD
+- **프로젝트명**: ROGUE & RELOAD
 - **프로젝트 유형**: 개인 프로젝트
 - **배포 여부**: 미배포
 - **한 줄 설명**: 실시간 멀티플레이 전투 기반 웹 게임
@@ -41,7 +41,7 @@
 <a id="project-overview"></a>
 ## 프로젝트 소개
 
-**ROG & REROAD**는 실시간 멀티플레이 전투를 중심으로 설계한 웹 게임 프로젝트입니다.
+**ROGUE & RELOAD**는 실시간 멀티플레이 전투를 중심으로 설계한 웹 게임 프로젝트입니다.
 
 여러 플레이어가 함께 로비와 파티를 구성하고, 게임 내에서 이동, 조준, 발사, 채팅, 상태 동기화를 수행할 수 있도록 구현했습니다.  
 프로젝트는 로그인, 캐릭터 생성, 로비, 친구/알림, 실시간 전투, 스테이지 진행, 저장 및 랭킹 흐름으로 구성되어 있습니다.
@@ -193,7 +193,7 @@
 ### 루트 구조
 
 ```text
-ROG & REROAD
+ROGUE & RELOAD
 ├─ Front_demo_demo/        # React + Phaser 프론트엔드
 ├─ backend/RR/             # Spring Boot 백엔드
 ├─ docker/                 # MariaDB / Redis 실행용 Docker 설정
