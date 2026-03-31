@@ -186,7 +186,7 @@ Spring Boot 백엔드를 분리한 구조로 설계되었으며,
 ![JWT](https://img.shields.io/badge/JWT-jjwt-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 ![Lombok](https://img.shields.io/badge/Lombok-Annotation-BC4521?style=flat-square)
 
-### Database / Infra
+### Database
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-11.4-003545?style=flat-square&logo=mariadb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-Latest-DC382D?style=flat-square&logo=redis&logoColor=white)
