@@ -190,7 +190,6 @@ Spring Boot 백엔드를 분리한 구조로 설계되었으며,
 
 ![MariaDB](https://img.shields.io/badge/MariaDB-11.4-003545?style=flat-square&logo=mariadb&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-Latest-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker Compose](https://img.shields.io/badge/Docker_Compose-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ---
 
