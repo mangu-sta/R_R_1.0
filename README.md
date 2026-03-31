@@ -136,17 +136,13 @@
 <a id="system-architecture"></a>
 ## 시스템 아키텍처
 
-```text
-[ React + Phaser Frontend ]
-            ↓
-[ Spring Boot Backend ]
-            ↓
-[ MariaDB / Redis ]
-            ↓
-[ WebSocket(STOMP) / SSE ]
-```
+## 시스템 아키텍처
 
-<!-- 추후 아키텍처 이미지 추가 예정 -->
+본 프로젝트는 React + Phaser 기반 프론트엔드와  
+Spring Boot 백엔드를 분리한 구조로 설계되었으며,  
+실시간 처리를 위해 WebSocket(STOMP)과 Redis를 활용했습니다.
+
+![시스템 아키텍처](./AT2.png)
 <!-- architecture image placeholder -->
 
 ### 구조 설명
